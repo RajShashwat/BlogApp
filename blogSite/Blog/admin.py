@@ -8,6 +8,6 @@ class BlogPostAdmin(SummernoteModelAdmin):
     list_display_links = ('id', 'title')
     search_fields = ('title', )
     list_per_page = 25
-    #summernote_fields = ('content', )
+    summernote_fields = ('content', )
 
 admin.site.register(BlogPost, BlogPostAdmin)

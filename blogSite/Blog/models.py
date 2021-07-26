@@ -10,7 +10,7 @@ class Categories(models.TextChoices):
     CULTURE = 'culture'
 
 class BlogPost(models.Model):
-    id = models.CharField(max_length=50,primary_key=True)
+    #id = models.CharField(max_length=50,primary_key=True)
     title = models.CharField(max_length=50)
     slug = models.SlugField()
     category = models.CharField(max_length=50, choices=Categories.choices, default=Categories.WORLD)
